@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-dark navbar-expand-lg ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+                <a class="navbar-brand text-white" href="#">Rutinas</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Preguntas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contactar</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+        <!--HOME-->
+<div class="pagewrap">
+    <div class="main">
+        <h1 class="text-center mt-3">Crea Tus Rutinas</h1>
+        <div class="form-container text-center">
+        <form>
+            <label>Fecha</label>
+            <input id="fecha" type="date" required>
+            <br>
+            <label>Ejercicio</label>
+            <select id="ejerciciosSelect">
+                <option value="" selected>Escoje un ejercicio</option>
+                <option value="Jumping Jacks">Jumping Jacks</option>
+                <option value="Push Ups">Push Ups</option>
+                <option value="Pull Ups">Pull Ups</option>
+                <option value="Squats">Squats</option>
+                <option value="Lunges">Lunges</option>
+                <option value="Planks">Planks</option>
+                <option value="Abs">Abs</option>
+                <option value="Bicep Curls">Bicep Curls</option>
+                <option value="Tricep Extension">Tricep Extension</option>
+                <option value="Chest Press">Chest Press</option>
+                <option value="Incline Chest Press">Incline Chest Press</option>
+                <option value="Decline Chest Press">Decline Chest Press</option>
+                <option value="Close Grip Chest Press">Close Grip Chest Press</option>
+                <option value="Row">Row</option>
+                <option value="Single Arm Row (left)">Single Arm Row (left)</option>
+                <option value="Single Arm Row (right)">Single Arm Row (right)</option>
+            </select>
+            <br>
+            <label>Equipo Seleccionado</label>
+            <select id="equipoSelect">
+                <option value="" selected>Escoje una opcion</option>
+                <option value="Peso Corporal">Peso Corporal</option>
+                <option value="Dumbells">Dumbells</option>
+                <option value="Kettlebells">Kettlebells</option>
+                <option value="Barbell">Barbell</option>
+            </select>
+            <br>
+            <label>Peso a utilizar <strong>(libras)</strong></label>
+            <select id="pesoSelect"></select>
+            <br>
+            <label>Sets</label>
+            <select id="setSelect"></select>
+            <br>
+            <label>Repeticiones</label>
+            <select id="repSelect"></select>
+        </form>
+        <button  id="anadirBtn" class="btn btn-info mt-3">Anadir Ejercicio</button>
+        <br>
+     
+        </div>
+        <div class="container text-center mt-4">
+          <h1>Ejercicios Seleccionados</h1>
+          <ul id="listcontainer">
+            <button id="comenzarBtn" class="btn btn-info mt-3">Comenzar Ejercicios</button>
+          </ul>
+        </div>
+    </div>
+    <footer>Made By Jaysen and EveryOne that can help  😎 @2021</footer>
+</div>
+  <script src="main.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

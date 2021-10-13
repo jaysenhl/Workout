@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+button {
+    box-shadow: 4px 4px 5px !important;
+}
+
+footer {
+    color: #00adb5;
+    display: flex;
+    align-items: center;
+    background-color: #222831;
+    height: 50px;
+    justify-content: center;
+}
+
+.item {
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #00adb5;
+    font-weight: bolder;
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+input {
+    background-color: white;
+    box-shadow: 4px 4px 5p;
+    border-radius: 7px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: #00adb5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+label {
+    color: #00adb5;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+nav,
+a {
+    background-color: #222831;
+    color: inherit;
+}
+
+.pagewrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+select {
+    box-shadow: 4px 4px 5px;
+    height: 30px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 10px;
+}
